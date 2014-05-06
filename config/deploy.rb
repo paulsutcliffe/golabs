@@ -5,7 +5,7 @@ require "rvm/capistrano"
 set :rvm_ruby_string, '2.1.0'
 set :rvm_type, :user  # Don't use system-wide RVM
 
-server "golabs.pe", :web, :app, :db, primary: true
+server "kosmyka.com", :web, :app, :db, primary: true
 
 set :application, "golabs"
 set :user, "paul"
