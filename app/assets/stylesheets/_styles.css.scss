@@ -1,0 +1,77 @@
+body {background-color: black; color: white; a{color: white;}}
+
+#navigation{
+  .nav li a{ 
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+  }
+    background-color:black;
+  .active{background-color: none; color: $yellow;}
+  .nav li a{background-color: black; padding-bottom:5px;}
+  .nav li a:hover{color:$yellow;border-bottom:2px solid $yellow; }
+
+}
+
+.img-responsive{
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+
+
+#home{background: url(image_path('0.jpg')) 50% 0 repeat fixed;}
+#what{background: url(image_path('1.jpg')) 50% 0 repeat fixed;}
+#how{background: url(image_path('2.png')) 50% 0 repeat fixed;}
+#work{background: url(image_path('3.jpg')) 50% 0 repeat fixed;}
+#contact{background: url(image_path('4.png')) 50% 0 repeat fixed;} 
+
+#contact, #home, #work, #what, #how{
+      min-height: 1000px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1920px;
+      position: relative;
+      -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    article{
+      height : 250px;
+      text-align:center;
+      top: 50px;
+      width: 100%;
+    }
+    }
+
+.what-col img{display:block; margin-left: auto; margin-right: auto;}
+
+#what-1{color: $blue;}
+#what-2{margin-top:100px; color: $green;}
+#what-3{margin-top:200px; color: $yellow;}
+
+.wrapper{
+    position: fixed;
+    width: 50%;
+    margin: 0px auto;
+    z-index: 300;
+    bottom: 0px;
+    display: inline-block;
+    background: black;
+    padding: 30px 50px;
+    left: 0;
+    right: 0;
+} 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

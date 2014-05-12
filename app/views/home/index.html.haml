@@ -1,7 +1,89 @@
-#region-Home.container
-  .region
-    .region-title
-      %h1= page_title!('index')
+#information
+  %section{:id => 'home', :data => {'type' => 'background', 'speed' => '5' }, :class => 'pages'}
+    %article
+      = image_tag(image_path('home_title.png'), class: 'img-responsive');
+    #info.container
+      .home-info
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
 
-  .region
-    %p Aquí va el contenido...
+  %section{:id => 'how', :data => {'type' => 'background', 'speed' => '5' }, :class => 'pages'}
+    %article
+      = image_tag(image_path('how_title.png'), class: 'img-responsive');
+    #how-info.container
+      .how-col
+        %h3
+          Let's get started
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      .how-col
+        %h3      
+          Let's get started
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      .how-col
+        %h3
+          Let's get started
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+  %section{:id => 'what', :data => {'type' => 'background', 'speed' => '5' }, :class => 'pages'}
+    %article
+      = image_tag(image_path('what_title.png'), class: 'img-responsive');
+    #info.container
+      #what-1.what-col
+        = image_tag(image_path('option.png'));
+        %h2
+          WEB APPS
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            
+      #what-2.what-col
+        = image_tag(image_path('facebook.png'));
+        %h2
+          FACEBOOK APPS
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      #what-3.what-col
+        = image_tag(image_path('cloud.png'));
+        %h2
+          WEBSITES
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+
+  %section{:id => 'work', :data => {'type' => 'background', 'speed' => '5' }, :class => 'pages'}
+    %article
+      = image_tag(image_path('work_title.png'), class: 'img-responsive');
+    #info.container
+      .img-work
+      .info-work
+        %h2
+          Project's name
+        %p
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    
+  %section{:id => 'contact', :data => {'type' => 'background', 'speed' => '10' }, :class => 'pages'}
+    %article
+      = image_tag(image_path('contact_title.png'), class: 'img-responsive');
+    #info.container
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      
+.wrapper
+  .seccion-footer
+    = link_to 'http://www.facebook.com/golabs' do 
+      = image_tag(image_path('fb-link.jpg'));
+      %span fb.com/golabs
+    %br
+    = link_to 'http://www.twitter.com/golabs' do 
+      = image_tag(image_path('twitter-link.jpg'));
+      %span @golaba
+    %br
+    = link_to '#' do 
+      = image_tag(image_path('skype-link.jpg'));
+      %span /golabs
+  .seccion-footer
+    = mail_to 'info@golabs.pe' do 
+      = image_tag(image_path('info-link.jpg'));
+      %span info@golabs.pe
+    %br
+    = link_to '#' do
+      = image_tag(image_path('phone-link.jpg'));
+      %span +51 343343 | 51+ 99887634 

@@ -1,6 +1,17 @@
-.container
-  .navbar-header
-    = link_to "Reemplazar por el nombre del nuevo proyecto", root_path, class: 'navbar-brand'
-  .collapse.navbar-collapse
-    %ul.nav.navbar-nav
-      %li= link_to 'Inicio', root_path, class: 'active'
+#navigation
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+      = link_to image_tag(image_path('logo-go.png')), root_path, class: 'navbar-brand'
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          = link_to 'home'
+        %li
+          = link_to 'what'
+        %li 
+          = link_to 'how'
+        %li
+          = link_to 'work'
+        %li
+          = link_to 'contact'
