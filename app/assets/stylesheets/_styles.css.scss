@@ -61,8 +61,16 @@ body {background-color: black; color: white; a{color: white;}}
     right: 0;
 } 
   
-  
-  
+.button{
+cursor:pointer;
+width: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+z-index: 400;
+position: fixed;
+margin: auto;
+}
   
   
   
