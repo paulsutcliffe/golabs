@@ -8,9 +8,10 @@ body {background-color: black; color: white; a{color: white;}}
   }
     background-color:black;
   .active{background-color: none; color: $yellow;}
-  .nav li a{background-color: black; padding-bottom:5px;}
+  .nav li a{margin: 15px; font-size: 16px; background-color: black; padding-bottom:5px;}
   .nav li a:hover{color:$yellow;border-bottom:2px solid $yellow; }
-
+  
+  .navbar-toggle{border: 1px solid white;}
 }
 
 .img-responsive{

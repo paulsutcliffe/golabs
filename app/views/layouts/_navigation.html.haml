@@ -2,6 +2,9 @@
   .container-fluid
     .navbar-header
       %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar  
+        %span.icon-bar  
+        %span.icon-bar  
       = link_to image_tag(image_path('logo-go.png')), root_path, class: 'navbar-brand'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
