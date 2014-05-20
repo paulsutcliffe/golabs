@@ -1,86 +1,41 @@
-body {background-color: black; color: white; a{color: white;}}
-
 #navigation{
-  .nav li a{ 
+  position: fixed;
+  width: 100%;
+  background: lightblue;
+  z-index: 100;
+  .navbar-header{margin-left: 10%;}
+  .navbar-collapse.collapse {position: absolute; right: 10%; top: 20px;}
+  .nav li a{
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
   }
-    background-color:black;
-  .active{background-color: none; color: $yellow;}
-  .nav li a{margin: 15px; font-size: 16px; background-color: black; padding-bottom:5px;}
-  .nav li a:hover{color:$yellow;border-bottom:2px solid $yellow; }
-  
-  .navbar-toggle{border: 1px solid white;}
+
 }
 
-.img-responsive{
-  padding-top: 25px;
-  padding-left: 20px;
+  video#bgvid {
+    right: 0px; bottom: 0px;
+    min-width: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(01.jpg) no-repeat;
+    background-size: cover;
+    margin-top:-170px;
+  }
+
+#seccion{
+z-index: 0;
+position: relative;
+backgroundcolor: white;
+  #what{background-color: $yellow;}
+  #how{background-color: $green;}
+  #work{background-color: $blue;}
+  #contact{background-color: $yellow;}
+}
+
+#info{
+position: relative;
+padding-top: 100px;
 }
 
 
 
-#home{background: url(image_path('0.jpg')) 50% 0 repeat fixed;}
-#what{background: url(image_path('1.jpg')) 50% 0 repeat fixed;}
-#how{background: url(image_path('2.png')) 50% 0 repeat fixed;}
-#work{background: url(image_path('3.jpg')) 50% 0 repeat fixed;}
-#contact{background: url(image_path('4.png')) 50% 0 repeat fixed;} 
-
-#contact, #home, #work, #what, #how{
-      min-height: 1000px;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 1920px;
-      position: relative;
-      -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-      box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-    article{
-      height : 250px;
-      text-align:center;
-      top: 50px;
-      width: 100%;
-    }
-    }
-
-.what-col img{display:block; margin-left: auto; margin-right: auto;}
-
-#what-1{color: $blue;}
-#what-2{margin-top:100px; color: $green;}
-#what-3{margin-top:200px; color: $yellow;}
-
-.wrapper{
-    position: fixed;
-    width: 50%;
-    margin: 0px auto;
-    z-index: 300;
-    bottom: 0px;
-    display: inline-block;
-    background: black;
-    padding: 30px 50px;
-    left: 0;
-    right: 0;
-} 
-  
-.button{
-cursor:pointer;
-width: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-z-index: 400;
-position: fixed;
-margin: auto;
-}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
