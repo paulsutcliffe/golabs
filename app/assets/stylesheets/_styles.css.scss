@@ -1,7 +1,7 @@
 #navigation{
   position: fixed;
   width: 100%;
-  background: lightblue;
+  background: transparent;
   z-index: 100;
   .navbar-header{margin-left: 10%;}
   .navbar-collapse.collapse {position: absolute; right: 10%; top: 20px;}
@@ -12,30 +12,49 @@
   }
 
 }
+#navi{
+height: 100px;
+background-color: black;
+
+}
 
   video#bgvid {
     right: 0px; bottom: 0px;
     min-width: 100%;
-    width: auto; height: auto; z-index: -100;
+    width: 100%; height: auto; z-index: -100;
     background: url(01.jpg) no-repeat;
     background-size: cover;
-    margin-top:-170px;
+    min-height: 90%;
   }
 
 #seccion{
 z-index: 0;
 position: relative;
 backgroundcolor: white;
-  #what{background-color: $yellow;}
   #how{background-color: $green;}
   #work{background-color: $blue;}
   #contact{background-color: $yellow;}
 }
 
 #info{
-position: relative;
-padding-top: 100px;
+position: fixed;
+left: 0px;
+right: 0px;
+color: white;
+margin: 20px auto;
+  h1{font-size: 200px;}
 }
 
+#seccion{
+  h1{margin: 0px auto !important; text-align:center; border-bottom: 1px solid red;}
+}
 
-
+.pages{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.nav > li > .home:hover, .nav > li > .home:focus {background-color: $green;}
+.nav > li > .what:hover, .nav > li > .what:focus, #what{background-color: $yellow;}
+.nav > li > .how:hover, .nav > li > .how:focus, #how{background-color: $green;}
+.nav > li > .work:hover, .nav > li > .work:focus, #work{background-color: $blue;}
+.nav > li > .contact:hover, .nav > li > .contact:focus, #contact{background-color: $yellow;}

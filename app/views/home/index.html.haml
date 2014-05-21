@@ -1,4 +1,6 @@
-%section{:id => 'home', :data => {'type' => 'background' }, :class => 'pages'}
+%section{:id => 'navi'}
+
+%section{:id => 'home', :data => {'type' => 'background' }}
   #info.container
     %h1
       Let's Go
@@ -12,14 +14,15 @@
       We’re go-getters.
       So come jump in and share our passion for excellent results. Let’s GO!
 
-  %video#bgvid{:autoplay => 'autoplay', :loop => 'loop', :width => '100%', :poster => "1.jpg"}
+  %video#bgvid{:autoplay => "", :loop => "", :width => '100%', :poster => "1.jpg"}
     %source{:src => "http://www.degordian.com/static/video/9999.webmhd.web", :type => 'video/webm; codecs="vp8, vorbis"'}
     %source{:src => "http://www.degordian.com/static/video/header.mp4", :type => 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'}
 #seccion
   %section{:id => 'what', :data => {'type' => 'background' }, :class => 'pages'}
     %article
-      = image_tag(image_path('what_title.png'), class: 'img-responsive');
-    #info.container
+      %h1
+        HERE WE GO
+    #what-info.container
       #what-1.what-col
         = image_tag(image_path('option.png'));
         %h2
@@ -43,7 +46,8 @@
 
   %section{:id => 'how', :data => {'type' => 'background' }, :class => 'pages'}
     %article
-      = image_tag(image_path('how_title.png'), class: 'img-responsive');
+      %h1
+        THE WAY TO GO
     #how-info.container
       .how-col
         %h3
@@ -65,8 +69,9 @@
   
   %section{:id => 'work', :data => {'type' => 'background' }, :class => 'pages'}
     %article
-      = image_tag(image_path('work_title.png'), class: 'img-responsive');
-    #info.container
+      %h1
+        THERE YOU GO
+    #work-info.container
       .img-work
       .info-work
         %h2
@@ -76,8 +81,9 @@
     
   %section{:id => 'contact', :data => {'type' => 'background' }, :class => 'pages'}
     %article
-      = image_tag(image_path('contact_title.png'), class: 'img-responsive');
-    #info.container
+      %h1
+        CONTACT US
+    #contact-info.container
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
 
 .wrapper
