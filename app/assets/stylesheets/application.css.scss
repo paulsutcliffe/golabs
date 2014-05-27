@@ -9,13 +9,45 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *
+ *= require_tree .
+ *= require font-awesome
  */
-@import 'bootstrap';
 
-@import 'mixins.css.scss';
-@import 'variables.css.scss';
-@import 'fonts.css.scss';
-@import 'layout.css.scss';
-@import 'styles.css.scss';
-@import 'media_queries.css.scss';
+@font-face {
+    font-family: 'nexa_slab_lightregular';
+    src: url('/assets/nexa-font/nexaslab-light-webfont.eot');
+    src: url('/assets/nexa-font/nexaslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/nexa-font/nexaslab-light-webfont.woff') format('woff'),
+         url('/assets/nexa-font/nexaslab-light-webfont.ttf') format('truetype'),
+         url('/assets/nexa-font/nexaslab-light-webfont.svg#nexa_slab_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('/assets/nexa-font/nexa-light-webfont.eot');
+    src: url('/assets/nexa-font/nexa-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/nexa-font/nexa-light-webfont.woff') format('woff'),
+         url('/assets/nexa-font/nexa-light-webfont.ttf') format('truetype'),
+         url('/assets/nexa-font/nexa-light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nexa_xboldregular';
+    src: url('/assets/nexa-font/nexa-xbold-webfont.eot');
+    src: url('/assets/nexa-font/nexa-xbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/nexa-font/nexa-xbold-webfont.woff') format('woff'),
+         url('/assets/nexa-font/nexa-xbold-webfont.ttf') format('truetype'),
+         url('/assets/nexa-font/nexa-xbold-webfont.svg#nexa_xboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
