@@ -340,7 +340,7 @@ blockquote {
 /* ##### HOME SECTION ##### */
 
 .intro-video {
-	background: url(	"/assets/pattern.png");
+	background: url("/assets/pattern.png");
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -1434,7 +1434,12 @@ footer .social-icon a:hover {
 }
 
 /* ##### CUSTOM BUTTON ##### */
+.mybutton {
+  font-family: 'nexa_xboldregular';
+}
+
 .mybutton a:hover, .mybutton button:hover, .mybutton a:focus
+
 .mybutton button:focus {
 	outline: none;
 }
